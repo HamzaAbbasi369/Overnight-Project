@@ -1,0 +1,86 @@
+<?php
+/** @var string $name */
+/** @var integer $id */
+/** @var string $action */
+/** @var string $image */
+/** @var string $title */
+/** @var string $icon */
+/** @var string $description */
+/** @var string $extra */
+/** @var boolean $checked */
+/** @var array $data */
+
+$formatted_data = '';
+$is_on_sale = false;
+if (!empty($data) && is_array($data)) {
+    if (!empty($data['sale_price']) && !empty($data['price']) && intval($data['price'] > intval($data['sale_price']))) {
+	    $is_on_sale = true;
+    }
+
+    $flatten_data = flattenWithKeys($data,'-','data-');
+
+    $formatted_data = array_reduce(
+        array_keys($flatten_data),                       // We pass in the array_keys instead of the array here
+        function ($carry, $key) use ($flatten_data) {    // ... then we 'use' the actual array here
+            return $carry . ' ' . $key . '="' . htmlspecialchars( $flatten_data[$key] ) . '"';
+        },
+        ''
+    );
+}
+
+$sale_html = '';
+$sale_class = '';
+if ($is_on_sale) {
+	$sale_html .= '<div class="parent-sale"><span class="onsale">Sale!</span></div>';
+	$sale_class .= ' selector-is-on-sale';
+}
+?>
+
+
+<!--  STILL NOT USED AND NOT CODED .. JUST DUMMY CODE !!!  -->
+
+<!--PURPOSE TYPE-->
+
+<div class="selector-wrapper">
+    <div data-group="<?=$name?>_tile" class="selector_tile <?=$name?>-selector-tile<?=$sale_class?>" id="div_<?=$id?>_tile">
+        <div data-group="<?=$name?>" class="selector <?=$name?>-selector" id="div_<?=$id?>" <?=$formatted_data?>
+        <?php if (!empty($action)): ?>
+            onclick="<?=$action?>"
+        <?php endif; ?> >
+            <div data-group="check_<?=$name?>" class="selector_check <?=($checked?'option_selected':'selector_check_passive')?>  <?=($icon?'on_text_tile':'on_tile')?> center-block"
+                 <?php if (!empty($image)):?>
+                 data-order-lens-design-img="<?= WcRx::get_assets_url() ?>image/<?=$image?>"
+                 <?php endif;?>
+                 id="div_<?=$id?>_check"
+
+                    <?php //onclick="--><?//=$action ?>
+            >
+            </div>
+        </div>
+
+        <p class="rx-product-name"><?=$title?>
+            <a href="#" class="popup-rx-tooltip" data-open="RxTooltip_<?=$id?>"></a>
+        </p>
+        <p class="rx-product-description"><?=$description?></p>
+        <div class="rx-product-price"><?=$submenu?></div>
+        <div class="rx-product-icon">
+            <?=$icon?>
+        </div>
+        <div id="div_<?=$id?>_l2" class="l2_select lens_tint_color rx-extra-section_div_<?=$id?>" style="display: none">
+            <div id="div_<?=$id?>_l2_content"><?=$extra?></div>
+        </div>
+        <div class="reveal" id="RxTooltip_<?=$id?>" data-reveal>
+            <button class="close-button" data-close="" aria-label="Close modal" type="button">
+                <span aria-hidden="true">×</span>
+            </button>
+                <p class='popup-rx-title'><?=$title?></p>
+                <hr class='gold-line'>
+                <div class='popup-rx-text'><?=$tooltip?></div>
+        </div>
+        <?=$sale_html?>
+    </div>
+</div>
+
+<script>
+    jQuery('.selector-wrapper').foundation();
+</script>

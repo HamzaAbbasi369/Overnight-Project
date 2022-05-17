@@ -1,0 +1,26 @@
+{
+    "name": "ong/rx",
+    "description": "ONG Rx",
+    "keywords": ["filter", "wordpress", "psr-3"],
+    "type": "wordpress-plugin",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eugene Odokienko",
+            "email": "evhen.odokienko@gmail.com"
+        },
+        {
+            "name": "Vladimir Habuda",
+            "email": "vadimir.habuda@agilefuel.com"
+        }
+    ],
+    "config": {
+        "discard-changes": "stash"
+    },
+    "require": {
+        "php": ">=7.0",
+        "composer-plugin-api": "^1.0",
+        "carldanley/wp-js-hooks": "dev-master"
+    }
+}
