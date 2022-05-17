@@ -50,6 +50,6 @@ if ( empty( WC()->cart->applied_coupons) ) {
 		<input type="submit" class="button coupon_hover" name="apply_coupon" value="<?php esc_attr_e( 'Apply Coupon', 'woocommerce' ); ?>">
 	</p>
 	<div class="clear"></div>222
-</form>
+</form>fdgdf
 
 <?php  ?>
