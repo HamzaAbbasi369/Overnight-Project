@@ -1,0 +1,85 @@
+@import "_variables.scss";
+
+@media screen and (max-width: 50em) {
+  #page {
+    .attention-message-wrapper {
+      min-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 41em) {
+  #page {
+    .attention-message-wrapper {
+      min-width: 100%;
+
+      .attention-message {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .attention {
+        width: 100%;
+        margin-bottom: 15px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .inputs-container {
+    .box {
+      &.shtrich {
+        padding-left: 8%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 39em) {
+  #modalSize {
+    .tabs-panel {
+      .inputs-container {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 30em) {
+  #modalSize {
+    .tabs-panel {
+      .inputs-container {
+        width: 100%;
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1021px){
+  .container-result-filter {
+    justify-content: center;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-result-filter {
+    flex-direction: column;
+
+    .current-filter {
+      text-align: center;
+      width: 45%;
+      margin: 0 auto 15px;
+
+      i {
+        display:none;
+      }
+
+      &:after {
+        top: 19%;
+        right: 23%;
+      }
+    }
+  }
+}

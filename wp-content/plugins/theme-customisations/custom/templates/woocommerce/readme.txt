@@ -1,0 +1,1 @@
+WooCommerce templates goes here

@@ -1,0 +1,26 @@
+{
+    "name": "ong/instant-filter",
+    "description": "ONG Filter widget that uses mongodb to do it quickly",
+    "keywords": ["filter", "wordpress", "psr-3"],
+    "type": "wordpress-plugin",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eugene Odokienko",
+            "email": "eugene.odokienko@agilefuel.com"
+        }
+    ],
+    "config": {
+        "discard-changes": "stash"
+    },
+    "require": {
+        "php": ">=7.0",
+        "mongodb/mongodb": "*",
+	    "composer-plugin-api": "^1.0",
+        "ext-mongodb": "*"
+    },
+    "autoload": {
+        "psr-0": {"OngStore\\": "src/"}
+    }
+}

@@ -1,0 +1,12 @@
+{
+	"Virtual Mirror": "Miroir virtuel",
+	"Use Photo": "Utiliser une photo",
+	"Load Photo":"Charger votre photo",
+	"Delete Photo": "Supprimer votre photo",
+	"Use Video": "Utiliser la video",
+	"Stop Video": "Arrêter la video",
+	"Save Snapshot": "Sauvegarder votre Snapshot",
+	"NO_CAM_FOUND": "Nous avons rencontré un problème avec votre Webcam.",
+	"ENABLE_PHOTO_MODE": "Le mode photo va être réactivé...",
+	"DETECTOR_FAIL": "Notre système ne parvient pas à trouver un visage sur cette photo. Merci d'utiliser une autre photo, type photo de passeport."
+}

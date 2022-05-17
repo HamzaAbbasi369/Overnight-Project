@@ -1,0 +1,38 @@
+{
+	"Virtual Mirror": "Virtual Mirror",
+	"Use Photo": "Photo Mode",
+	"Load Your Own Photo": "Open Your Own Photo",
+	"Delete Your Own Photo": "Delete Your Own Photo",
+	"Use Video": "Video Mode",
+	"Stop Video": "Stop Video",
+	"Save Snapshot": "Save Snapshot",
+	"Suitable Glasses": "Suitable Glasses",
+	"NO_CAM_FOUND": "There was some problem trying to fetch video from your webcam.",
+	"ENABLE_PHOTO_MODE": "Photo Mode will be re-enabled...",
+	"DETECTOR_FAIL": "The tracking had problems with finding a face in this photo. Please use a suitable one. Optimal is a sharp passport photo.",
+	"Due to the resulting parallax, the landscape mode is useless. Please rotate back.": "Due to the resulting parallax, the landscape mode is useless. Please rotate back.",
+
+	"round": "round",
+	"angular": "angular",
+	"heart-shaped": "heart-shaped",
+	"oval": "oval",
+
+	"Round Face": "Round Face",
+	"Angular Face": "Angular Face",
+	"Heart-Shaped Face": "Heart-Shaped Face",
+	"Oval Face": "Oval Face",
+
+	"Please look straight into the camera!": "Please look straight into the camera!",
+	"Detecting face shape": "Detecting face shape",
+	"A": "A",
+	"face": "face",
+	"was recognized.": "was recognized.",
+
+	"The recommended spectacle frame shape is:": "The recommended spectacle frame shape is",
+	"rectangle": "rectangle",
+	"Cat Eye or Aviator Style": "Cat Eye or Aviator Style",
+	"oval or round": "oval or round",
+	"not specified. Every frame shape should fit": "not specified. Every frame shape should fit",
+
+	"Tap here for suitable glasses.": "Tap here for suitable glasses."
+}

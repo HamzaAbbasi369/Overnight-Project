@@ -1,0 +1,12 @@
+{
+	"Virtual Mirror": "Espejo Virtual",
+	"Use Photo": "Modo foto",
+	"Load Photo": "Subir foto propia",
+	"Delete Photo": "Borrar foto propia",
+	"Use Video": "Modo video",
+	"Stop Video": "Parar video",
+	"Save Snapshot": "Guardar instantánea",
+	"NO_CAM_FOUND": "No se ha podido encontrar ninguna cámera",
+	"ENABLE_PHOTO_MODE": "Modo foto se vuelve a activar...",
+	"DETECTOR_FAIL": "El reconocimiento facial ha fallado. Por favor, usa una imagen propia. Es ideal una foto de pasaporte."
+}

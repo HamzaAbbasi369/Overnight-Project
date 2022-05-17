@@ -1,0 +1,38 @@
+{
+	"Virtual Mirror": "Oglindă Virtuală",
+	"Use Photo": "Mod Poză",
+	"Load Your Own Photo":"Încarcă poza ta",
+	"Delete Your Own Photo": "Șterge poza ta",
+	"Use Video": "Mod Video",
+	"Stop Video": "Stop Video",
+	"Save Snapshot": "Salvează instantaneu",
+	"Suitable Glasses": "Suitable Glasses",
+	"NO_CAM_FOUND": "A apărut o problemă la încercarea de a prelua video de pe camera web.",
+	"ENABLE_PHOTO_MODE": "Modul Poză va fi re-activat...",
+	"DETECTOR_FAIL": "Urmărirea a avut probleme cu găsirea unei fețe în această fotografie. Vă rugăm să utilizați o poză potrivită. Optimal este o fotografie clară a pașaportului.",
+	"Due to the resulting parallax, the landscape mode is useless. Please rotate back.": "Due to the resulting parallax, the landscape mode is useless. Please rotate back.",
+
+	"round": "round",
+	"angular": "angular",
+	"heart-shaped": "heart-shaped",
+	"oval": "oval",
+
+	"Round Face": "Round Face",
+	"Angular Face": "Angular Face",
+	"Heart-Shaped Face": "Heart-Shaped Face",
+	"Oval Face": "Oval Face",
+
+	"Please look straight into the camera!": "Please look straight into the camera!",
+	"Detecting face shape": "Detecting face shape",
+	"A": "A",
+	"face": "face",
+	"was recognized.": "was recognized.",
+
+	"The recommended spectacle frame shape is:": "The recommended spectacle frame shape is",
+	"rectangle": "rectangle",
+	"Cat Eye or Aviator Style": "Cat Eye or Aviator Style",
+	"oval or round": "oval or round",
+	"not specified. Every frame shape should fit": "not specified. Every frame shape should fit",
+
+	"Tap here for suitable glasses.": "Tap here for suitable glasses."
+}

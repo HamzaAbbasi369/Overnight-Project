@@ -1,0 +1,38 @@
+{
+	"Virtual Mirror": "Virtualno ogledalo",
+	"Use Photo": "Foto način",
+	"Load Your Own Photo": "Naloži svojo fotografijo",
+	"Delete Your Own Photo": "Izbriši svojo fotografijo",
+	"Use Video": "Video način",
+	"Stop Video": "Ustavi video",
+	"Save Snapshot": "Shrani sliko",
+	"Suitable Glasses": "Primerna očala",
+	"NO_CAM_FOUND": "There was some problem trying to fetch video from your webcam.",
+	"ENABLE_PHOTO_MODE": "Foto način bo ponovno omogočen...",
+	"DETECTOR_FAIL": "The tracking had problems with finding a face in this photo. Please use a suitable one. Optimal is a sharp passport photo.",
+	"Due to the resulting parallax, the landscape mode is useless. Please rotate back.": "Due to the resulting parallax, the landscape mode is useless. Please rotate back.",
+
+	"round": "round",
+	"angular": "angular",
+	"heart-shaped": "heart-shaped",
+	"oval": "oval",
+
+	"Round Face": "Okrogel obrazz",
+	"Angular Face": "Oglat obraz",
+	"Heart-Shaped Face": "Srčast obraz",
+	"Oval Face": "Ovalen obraz",
+
+	"Please look straight into the camera!": "Please look straight into the camera!",
+	"Detecting face shape": "Detecting face shape",
+	"A": "A",
+	"face": "face",
+	"was recognized.": "was recognized.",
+
+	"The recommended spectacle frame shape is:": "The recommended spectacle frame shape is",
+	"rectangle": "rectangle",
+	"Cat Eye or Aviator Style": "Cat Eye or Aviator Style",
+	"oval or round": "oval or round",
+	"not specified. Every frame shape should fit": "not specified. Every frame shape should fit",
+
+	"Tap here for suitable glasses.": "Tap here for suitable glasses."
+}

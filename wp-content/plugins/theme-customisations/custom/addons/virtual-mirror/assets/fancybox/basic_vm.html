@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Virtual Mirror</title>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+		 	body {
+		 		font-family: 'Droid Sans';
+				background-color: #ffffff;
+		 	}
+		 	#mirror {
+		 		position: fixed;
+		 		top:50%;
+		 		left: 50%;
+		 		transform: translate(-50%, -50%);
+		 		text-align: center;
+  			}
+			.close-btn {
+    			display: inline-block;
+    			text-align: center;
+    			vertical-align: middle;
+    			padding: 12px 28px;
+    			border: 2px solid #666666;
+    			border-radius: 20px;
+    			background: #ffffff;
+    			background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+    			background: -moz-linear-gradient(top, #ffffff, #ffffff);
+    			background: linear-gradient(to bottom, #ffffff, #ffffff);
+    			font: normal normal bold 20px 'Droid Sans';
+    			color: #696969;
+    			text-decoration: none;
+			}
+			.close-btn:hover,
+			.close-btn:focus {
+    			border: 2px solid #858585;
+    			color: #696969;
+    			text-decoration: none;
+			}
+			.close-btn:active {
+    			background: #b3b3b3;
+    			background: -webkit-gradient(linear, left top, left bottom, from(#b3b3b3), to(#ffffff));
+    			background: -moz-linear-gradient(top, #b3b3b3, #ffffff);
+    			background: linear-gradient(to bottom, #b3b3b3, #ffffff);
+			}
+			.close-btn:before {
+    			content:  "\0000a0";
+    			display: inline-block;
+    			height: 24px;
+    			width: 24px;
+    			line-height: 24px;
+    			margin: 0 4px -6px -4px;
+    			position: relative;
+    			top: 0px;
+    			left: 0px;
+    			background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABu0lEQVRIie2VsWrbYBSFv+tQKJKhWw02pHQQHQo2VPLeIbTZ8yBtn6D0BUqb5hm6GQ1duiaTA9IQD+3iJcbIuJMNbYYafDpIiezUsaRkzZmu4Op8/z2/uIJ7FWinTFPb7zqNZutro9WcTJNkVAVgRQ0dv+sIQoxXSDPQs0Ec/yoLqG03DxxBz1LzJfD+Yj4vbb4V0PEDBwgN9oWWwJtZ3T0cDodV/DdHlJ08jQVSc8c5Gp2cVDKHDRNcxYJdmr+bue6tzOHaBJ0gcBA9zPJYXPdodHx8K/M1QCfo1pFCYXsgMD6CfUHKOo28zl7SzbVBchZHfw2gHXTrBt+Al0jIDBPIhGGwWhcY57Wen8XRjxqAaQkSyk5q18NbqZU9C22t9V9Evl8XFhq2l1l9wuzzeuvqEQsk5RFdqv3CdzDrmdm+lH5BzoOdw36/X850g9Z20XQyWTSarRDwzfCA14ulZk+f7J6Ox+O7A1JIkkOQB3YnyMZtmkMsncSySXarQ25c19NJsmi0mimEPK6Hnnc6Pz8vDdi6TQdRdAEcCL6bVEP68Oj3n8el3Snxw5kmV3fiGbwdxNHPKoB7FeoftHXREy7rpPcAAAAASUVORK5CYII=") no-repeat left center transparent;
+    			background-size: 100% 100%;
+			}
+			
+		 </style>
+	</head>
+	<body>
+		<div id="mirror">
+			<script>
+				function close_tab() {
+  					window.top.close();
+  					opener.window.focus();
+				}
+				var c = window.location.href.split('?')[1];	
+				document.write('<iframe src="/virtual-mirror/core/vmjs-0-6-0.min.html?' + c + '" width="482" height="580" frameborder="0" scrolling="no"></iframe>');
+			</script>
+    		<a class="close-btn" href="#" onclick="close_tab();return false;">Close</a>
+		</div>
+    </body>
+</html>

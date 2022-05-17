@@ -1,0 +1,12 @@
+{
+	"Virtual Mirror": "Espelho Virtual",
+	"Use Photo": "Modo Foto",
+	"Load Photo":"Carregar Foto",
+	"Delete Photo": "Apagar Foto",
+	"Use Video": "Modo Vídeo",
+	"Stop Video": "Parar Vídeo",
+	"Save Snapshot": "Salvar Foto",
+	"NO_CAM_FOUND": "Não foi possível encontrar sua câmera.",
+	"ENABLE_PHOTO_MODE": "Modo foto será reativado...",
+	"DETECTOR_FAIL": "Houveram problemas no reconhecimento facial. Por favor, utilize uma imagem própria, de preferência uma foto 3x4."
+}

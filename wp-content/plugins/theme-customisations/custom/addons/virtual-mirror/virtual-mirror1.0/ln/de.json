@@ -1,0 +1,38 @@
+{
+	"Virtual Mirror": "Virtueller Spiegel",
+	"Use Photo": "Foto-Modus",
+	"Load Your Own Photo": "Eigenes Foto öffnen",
+	"Delete Your Own Photo": "Eigenes Foto löschen",
+	"Use Video": "Video-Modus",
+	"Stop Video": "Video anhalten",
+	"Save Snapshot": "Schnappschuss speichern",
+	"Suitable Glasses": "Geeignete Brillen",
+	"NO_CAM_FOUND": "Eine Kamera kann nicht gefunden werden.",
+	"ENABLE_PHOTO_MODE": "Foto-Mode wird wieder aktiviert...",
+	"DETECTOR_FAIL": "Die Gesichtserkennung schlug fehl. Bitte benutzen Sie ein geeignetes Foto. Optimal ist ein scharfes Passfoto.",
+	"Due to the resulting parallax, the landscape mode is useless. Please rotate back.": "Aufgrund der entstehenden Parallaxe ist der Querformatmodus unbrauchbar. Bitte drehen Sie zurück.",
+
+	"round": "rundes",
+	"angular": "eckiges",
+	"heart-shaped": "herzförmiges",
+	"oval": "ovales",
+
+	"Round Face": "Rundes Gesicht",
+	"Angular Face": "Eckiges Gesicht",
+	"Heart-Shaped Face": "Herzförmiges Gesicht",
+	"Oval Face": "Ovales Gesicht",
+
+	"Please look straight into the camera!": "Schauen Sie bitte gerade in die Kamera!",
+	"Detecting face shape": "Erkennnung der Gesichtsform",
+	"A": "Ein",
+	"face": "Gesicht",
+	"was detected.": "wurde erkannt.",
+
+	"The recommended spectacle frame shape is": "Die Empfehlung für die Rahmenform ist",
+	"rectangle": "rechteckig",
+	"Cat Eye or Aviator Style": "Cat Eye- oder Aviator-Stil",
+	"oval or round": "oval oder rund",
+	"not specified. Every frame shape should fit": "nicht spezifiziert, sämtliche Formen sind geeignet",
+
+	"Tap here for suitable glasses.": "Berühren Sie hier für geeignete Brillen."
+}

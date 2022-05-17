@@ -1,0 +1,12 @@
+{
+	"Virtual Mirror": "Live δοκιμή",
+	"Use Photo": "Φωτογραφία",
+	"Load Photo":"Ανέβασε την φωτογραφία σου",
+	"Delete Photo": "Διαγραφή εικόνας",
+	"Use Video": "Βίντεο",
+	"Stop Video": "Διακοπή Βίντεο",
+	"Save Snapshot": "Αποθηκέυση εικόνας",
+	"NO_CAM_FOUND": "There was some problem trying to fetch video from your webcam.",
+	"ENABLE_PHOTO_MODE": "Photo Mode will be re-enabled...",
+	"DETECTOR_FAIL": "The tracking had problems with finding a face in this photo. Please use a suitable one. Optimal is a sharp passport photo."
+}

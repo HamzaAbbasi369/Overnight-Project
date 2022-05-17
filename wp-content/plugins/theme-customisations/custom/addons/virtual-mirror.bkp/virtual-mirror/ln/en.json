@@ -1,0 +1,12 @@
+{
+	"Virtual Mirror": "Virtual Mirror",
+	"Use Photo": "Photo Mode",
+	"Load Photo":"Load Your Photo",
+	"Delete Photo": "Delete Your Photo",
+	"Use Video": "Video Mode",
+	"Stop Video": "Stop Video",
+	"Save Snapshot": "Save Snapshot",
+	"NO_CAM_FOUND": "There was some problem trying to fetch video from your webcam.",
+	"ENABLE_PHOTO_MODE": "Photo Mode will be re-enabled...",
+	"DETECTOR_FAIL": "The tracking had problems with finding a face in this photo. Please use a suitable one. Optimal is a sharp passport photo."
+}

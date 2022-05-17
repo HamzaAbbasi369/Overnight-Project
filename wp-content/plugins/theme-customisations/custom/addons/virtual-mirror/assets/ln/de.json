@@ -1,0 +1,12 @@
+{
+	"Virtual Mirror": "Virtueller Spiegel",
+	"Use Photo": "Foto-Modus",
+	"Load Photo": "Eigenes Foto laden",
+	"Delete Photo": "Eigenes Foto löschen",
+	"Use Video": "Video-Modus",
+	"Stop Video": "Video anhalten",
+	"Save Snapshot": "Schnappschuss speichern",
+	"NO_CAM_FOUND": "Eine Kamera kann nicht gefunden werden.",
+	"ENABLE_PHOTO_MODE": "Foto-Mode wird wieder aktiviert...",
+	"DETECTOR_FAIL": "Die Gesichtserkennung schlug fehl. Bitte benutzen Sie ein geeignetes Foto. Optimal ist ein scharfes Passfoto."
+}

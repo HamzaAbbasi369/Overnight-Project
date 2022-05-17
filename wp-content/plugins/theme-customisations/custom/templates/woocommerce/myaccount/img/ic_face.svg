@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="16px" viewBox="0 0 8 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>ic</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ONG_email_template" transform="translate(-336.000000, -1097.000000)">
+            <g id="Email" transform="translate(40.000000, 40.000000)">
+                <g id="Content">
+                    <g id="Socials" transform="translate(0.000000, 999.000000)">
+                        <g id="ic" transform="translate(288.000000, 54.000000)">
+                            <rect id="bounds" x="0" y="0" width="24" height="24"></rect>
+                            <path d="M9.61390522,7.09869057 L9.61390522,9.30157726 L8,9.30157726 L8,11.9952756 L9.61390522,11.9952756 L9.61390522,20 L12.9292091,20 L12.9292091,11.9954988 L15.153932,11.9954988 C15.153932,11.9954988 15.362287,10.7038911 15.463284,9.29164497 L12.9417454,9.29164497 L12.9417454,7.44985492 C12.9417454,7.17457778 13.303214,6.80429284 13.6604791,6.80429284 L15.4667807,6.80429284 L15.4667807,4 L13.0108251,4 C9.53195447,3.999814 9.61390522,6.69619076 9.61390522,7.09869057 Z" id="facebook" fill="#000000"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

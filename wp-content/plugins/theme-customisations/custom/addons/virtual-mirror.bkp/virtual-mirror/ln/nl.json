@@ -1,0 +1,12 @@
+{
+	"Virtual Mirror": "Virtuele Spiegel",
+	"Use Photo": "Fotomodus",
+	"Load Photo": "Uw eigen foto openen",
+	"Delete Photo": "Foto verwijderen",
+	"Use Video": "Videomodus",
+	"Stop Video": "Video gereed",
+	"Save Snapshot": "Snapshot bewaren",
+	"NO_CAM_FOUND": "Geen kamera (web cam) gevonden.",
+	"ENABLE_PHOTO_MODE": "De video modus wordt opnieuw geactiveerd...",
+	"DETECTOR_FAIL": "Fout bij de gezichtsherkenning. Zo mogelijk een geschikte foto gebruiken. Optimaal is een scherpe pasfoto."
+}

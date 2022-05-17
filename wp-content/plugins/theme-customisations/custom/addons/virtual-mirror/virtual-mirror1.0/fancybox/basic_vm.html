@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+	<title>Virtual Mirror Mobile View</title>
+	<meta charset='utf-8'>
+	<meta id='viewport' name='viewport' content='width=device-width, initial-scale=0.8, user-scalable=no'>
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+		body {
+			font-family: 'Droid Sans';
+			background-color: #ffffff;
+			margin: 0;
+			padding: 0;
+		}
+
+		#mirror {
+			position: fixed;
+			top: 304px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.x {
+			position: absolute;
+			top: 7px;
+			width: 30px;
+			height: 30px;
+			background-color: #ff0d00;
+			border-radius: 50%;
+		}
+		.x::before, .x::after {
+			position: absolute;
+			top: 13px;
+			left: 6px;
+			width: 18px;
+			height: 4px;
+			content: "";
+			background-color: #eef5df;
+
+		}
+		.x::before {
+			-ms-transform: rotate(-45deg);
+			-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+		}
+		.x::after {
+			-ms-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+		.x:hover {
+			cursor: pointer;
+			background-color: #ff4040;
+		}
+		.x:hover::before, .x:hover::after {
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<div id='mirror'>
+		<a id="closeBtn" class="x" href="#" onclick="closeTab();return false;"></a>
+
+		<script>
+			'use strict';
+
+			const vmLocation = '../core/vmjs.html';
+
+			const videoLandscapeWidth = 422;
+			const videoPortraitWidth = 332;
+			const closeBtnX = 466;
+
+			let overlayEl, dropdownBtn;
+
+			window.addEventListener('load', function() {
+				getMobileOrientation();
+			});
+
+			function getMobileOrientation() {
+				getOrientation();
+				window.addEventListener('orientationchange', function() {
+					orientationChanged().then(function() {
+						getOrientation();
+					});
+				});
+			}
+
+			function orientationChanged() {
+  				const timeout = 120;
+  				return new window.Promise(function(resolve) {
+    				const go = (i, height0) => {
+     					window.innerHeight != height0 || i >= timeout ?
+						resolve() :
+						window.requestAnimationFrame(() => go(i + 1, height0));
+   					};
+    				go(0, window.innerHeight);
+  				});
+			}
+
+			function getOrientation() {
+				if (Math.abs(window.orientation) == 90) {
+					if (Math.round(overlayEl.getBoundingClientRect().width) == videoLandscapeWidth) {
+						document.getElementById('closeBtn').style.left = closeBtnX - dropdownBtn.getBoundingClientRect().left + 'px';
+					}
+					document.getElementById('viewport').setAttribute('content', 'width=device-width, maximum-scale=2, minimum-scale=0.25, user-scalable=yes');
+				} else {
+					if (Math.round(overlayEl.getBoundingClientRect().width) == videoPortraitWidth) {
+						document.getElementById('closeBtn').style.left = closeBtnX - dropdownBtn.getBoundingClientRect().left + 'px';
+					}
+					document.getElementById('viewport').setAttribute('content', 'width=device-width, initial-scale=0.8, user-scalable=no');
+				}
+			}
+
+			function closeTab() {
+				window.top.close();
+				opener.window.focus();
+			}
+
+			let c = window.location.href.split('?')[1];
+			document.write('<iframe id="vm" src="' + vmLocation + '?' + c + '" width="482" height="598" frameborder="0" scrolling="no"></iframe>');
+
+			document.getElementById('vm').addEventListener('load', () => {
+				overlayEl = document.getElementById('vm').contentWindow.document.getElementsByTagName('canvas')[0];
+				dropdownBtn = document.getElementById('vm').contentWindow.document.getElementsByTagName('button')[0];
+				document.getElementById('closeBtn').style.left = closeBtnX - dropdownBtn.getBoundingClientRect().left + 'px';
+
+				document.getElementById('vm').contentDocument.body.addEventListener('click', () => {
+					document.getElementById('closeBtn').style.left = closeBtnX - dropdownBtn.getBoundingClientRect().left + 'px';
+				});
+			});
+		</script>
+	</div>
+</body></html>

@@ -1,0 +1,26 @@
+{
+    "name": "ong/theme-customisations",
+    "description": "ONG Custom Theme Customisations",
+    "keywords": ["filter", "wordpress", "psr-3"],
+    "type": "wordpress-plugin",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Petrick",
+            "email": "andrewpetrick1987@gmail.com"
+        },
+        {
+            "name": "Vladidmir Habuda",
+            "email": "vadimir.habuda@agilefuel.com"
+        },
+        {
+            "name": "Eugene Odokienko",
+            "email": "evhen.odokienko@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "wpackagist-plugin/carbon-fields": "1.6.0"
+    }
+}

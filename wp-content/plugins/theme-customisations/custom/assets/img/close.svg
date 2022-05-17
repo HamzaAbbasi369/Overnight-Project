@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.600000024">
+        <g id="Popup_Home_Page_var.2" transform="translate(-984.000000, -277.000000)" fill="#666666">
+            <path d="M990.6,283 L996,277.6 L995.4,277 L990,282.4 L984.6,277 L984,277.6 L989.4,283 L984,288.4 L984.6,289 L990,283.6 L995.4,289 L996,288.4 L990.6,283 Z" id="close"></path>
+        </g>
+    </g>
+</svg>
