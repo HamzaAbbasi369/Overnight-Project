@@ -66,6 +66,7 @@ do_action( 'woocommerce_before_cart' );
                 <p class="shopping--content-title">SHOPPING CART</p>
 					
             </div>
+            asa123
 			<?php
 				if ( get_field( 'is_not_rushed', 'option' ) ) :
 
